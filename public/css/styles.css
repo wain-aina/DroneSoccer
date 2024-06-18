@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "EB Garamond", serif;
+    box-sizing: border-box;
+}
+
+div .row{
+    overflow: hidden;
+}
+
+#pills-contact, #pills-events, #pills-about {
+    background: #FAF9F6;
+}
+
+/* NAVBAR */
+
+.nav-link {
+    color: #007aff;
+    font-size: 1.3em;
+}
+
+/* HOME SECTION */
+
+.home-section {
+    padding: 2% 0 0;
+}
+
+.intro-title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+/* LOADER */
+
+.loader {
+    position: relative;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+}
+
+.loader span:nth-child(1) {
+    filter: blur(5px);
+    animation: animate 1.2s linear infinite;
+}
+
+.loader span:nth-child(2) {
+    filter: blur(10px);
+    animation: animate 1.2s linear infinite;
+}
+
+.loader span:nth-child(3) {
+    filter: blur(25px);
+    animation: animate 1.2s linear infinite;
+}
+
+.loader span:nth-child(4) {
+    filter: blur(50px);
+    animation: animate 1.2s linear infinite;
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: url("../images/ball.png");
+    background-size: 260px 260px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+/*CALL TO ACTION*/
+.cta {
+    padding: 3% 7%;
+    background-color: blue;
+}
+
+.cta h2, .cta p {
+    color: #fff;
+    padding: 0 5% 0 2%;
+}
+
+.cta h2 {
+    font-size: 4em;
+}
+
+.cta p {
+    font-size: 1.8em;
+}
+
+/* ABOUT */
+.about-title {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.blob {
+    width: 400px;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 45vh;
+}
+
+.video-box {
+    border-radius: 22px;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    box-shadow: 0 19px 51px 0 rgba(0, 0, 0, 0.16), 0 14px 19px 0 rgba(0, 0, 0, 0.07);
+}
+
+/* GAMEPLAY */
+
+#pills-gameplay {
+    padding: 2% 0;
+}
+
+.gameplay-bg .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    height: 30rem;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    font-size: 22px;
+}
+
+.striped-line {
+    transform: rotate(90deg);
+    width: 80px;
+    height: 10px;
+    background-color: #000;
+    background-image: linear-gradient(to right, red 0%, blue 50%, red 100%);
+    border-radius: 25px;
+}
+
+.gameplay-bg {
+    overflow: hidden;
+    background: url('/images/drone.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.ag-format-container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.ag-courses_item {
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    flex-basis: calc(33.33333% - 30px);
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.ag-courses-item_link {
+    display: block;
+    padding: 30px 30px;
+    background-color: #E5E4E2;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.ag-courses-item_link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+
+}
+
+.ag-courses-item_title {
+    min-height: 50px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    z-index: 2;
+    position: relative;
+}
+
+.ag-courses-item_title .text{
+    margin: 0 0 25px;
+}
+
+.ag-courses-item_date-box {
+    font-size: 18px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+
+.ag-courses-item_date {
+    font-weight: bold;
+    color: #FF0000;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease
+}
+
+.ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #FF0000;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+    background-color: #4c49ea;
+}
+
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+    background-color: #FF0000;
+}
+
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+    background-color: #4c49ea;
+}
+
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+    background-color: #FF0000;
+}
+
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+    background-color: #4c49ea;
+}
+
+.live_card .card {
+    --blur: 52px;
+    --size: clamp(300px, 50vmin, 600px);
+    width: var(--size);
+    aspect-ratio: 4 / 3;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    color: #fff;
+    transform: translateZ(0);
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(calc(1 + (var(--hover, 0) * 0.25))) rotate(calc(var(--hover, 0) * -5deg));
+    transition: transform 0.2s;
+}
+
+.card__footer {
+    padding: 0 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    display: grid;
+    grid-template-row: auto auto;
+    gap: 0.5ch;
+    background: hsl(0 0% 100% / 0.5);
+    backdrop-filter: blur(16px);
+    height: 20%;
+    align-content: center;
+}
+
+.card__footer span:nth-of-type(1) {
+    font-size: 24px;
+}
+
+.card__footer span:nth-of-type(2) {
+    font-size: 20px;
+}
+
+.card:is(:hover, :focus-visible) {
+    --hover: 1;
+}
+
+/* EVENT CARDS */
+
+.comm-services .card {
+    width: 20rem;
+    border-radius: 25px;
+    border: 1px solid;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.6);
+    overflow: hidden
+}
+
+/* SIGN UP CARD */
+
+#pills-sign-up .card{
+    padding: 30px 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)
+}
+
+.blue-text{
+    color: #00BCD4
+}
+
+.form-control-label{
+    margin-bottom: 0
+}
+
+input, textarea, button{
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300
+}
+
+input:focus, textarea:focus{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 400
+}
+
+.btn-block{
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 400;
+    height: 43px;
+    cursor: pointer
+}
+
+.btn-block:hover{
+    color: #fff !important
+}
+
+button:focus{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.signup {
+    font-size: 32px;
+}
+
+/* FOOTER ICONS */
+
+#pills-contact .col-md-2 {
+    text-align: center;
+}
+
+/*CARDS*/
+
+.comm-services .card, .container-content .card, .game-sevices .card{
+    border-radius: 25px;
+    border: 1px solid;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.6);
+    overflow: hidden
+}
+
+.comm-services .card {
+    width: 32rem;
+}
+
+.game .card{
+    width: 35rem;
+}
+
+.comm-services img {
+    height: 25rem;
+}
+
+.container-content .icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(241, 241, 241, 0.2);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px
+}
+
+.list-group-item {
+    font-size: 1.5em;
+}
+
+/*FAQ*/
+.faq-btn-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.accordion-body {
+    font-size: 22px;
+}

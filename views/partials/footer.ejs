@@ -1,0 +1,91 @@
+<section id="pills-contact" style="">
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <p class="main-media">+254 787 198 981</p>
+                    <p class="main-media-query">+254 753 860 086</p>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <p class="main-media">ACK St Mark's, Westlands</p>
+                    <p class="main-media-query">Divine Office Suites, Office D-1</p>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <p class="main-media">drones@3qs.co.ke</p>
+                    <p class="main-media-query">Send us your query anytime!</p>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form id="subForm">
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" name="newsletter" placeholder="Email address" autocomplete="off">
+                            <button disabled id="sub-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-tiktok fa-xl"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</section>
+
+<script src="/js/fetch.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/404.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+    const stemform = document.getElementById("stemForm");
+    const stemButton = document.getElementById("stem-btn");
+    const checkStemFields = () => {
+        let isEmpty = false;
+        const inputs = stemform.querySelectorAll("input[required]");
+        for (const input of inputs) {
+            if (input.value.trim() === "") {
+                isEmpty = true;
+                break;
+            }
+        }
+        stemButton.disabled = isEmpty;
+    }
+    stemform.addEventListener("keyup", checkStemFields);
+</script>
+
+<script>
+    const subform = document.getElementById("subForm");
+    const subButton = document.getElementById("sub-btn");
+    const checkNewsFields = () => {
+        let isEmpty = false;
+        const inputs = subform.querySelectorAll("input");
+        for (const input of inputs) {
+            if (input.value.trim() === "") {
+                isEmpty = true;
+                break;
+            }
+        }
+        subButton.disabled = isEmpty;
+    }
+    subform.addEventListener("keyup", checkNewsFields);
+</script>
+
+</body>
+</html>

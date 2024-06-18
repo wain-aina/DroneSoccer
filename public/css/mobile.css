@@ -1,0 +1,109 @@
+@media screen and (max-width: 768px) {
+    #navbarSupportedContent {
+        padding-top: 10px;
+    }
+
+    .flex-sm-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blob {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .competition {
+        padding: 3%;
+    }
+    .about-content {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+    .ag-courses_item {
+        -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    }
+
+    .ag-courses-item_title {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .home-section {
+        padding: 5% 0 0;
+    }
+
+    .cta h2, .cta p {
+        color: #fff;
+        padding: 1%;
+    }
+
+    .cta h2 {
+        font-size: 2.5em;
+    }
+
+    .cta p {
+        font-size: 1.5em;
+    }
+
+    .ag-format-container {
+        width: 96%;
+    }
+
+    .ag-courses_item {
+        -ms-flex-preferred-size: calc(33.33333% - 30px);
+        flex-basis: calc(33.33333% - 30px);
+        margin: 0 0 30px;
+        overflow: hidden;
+        border-radius: 28px;
+    }
+
+    .video-box iframe {
+        height: 25vh;
+    }
+
+    .gameplay-bg .card{
+        justify-content:center;
+        height: 33rem;
+        font-size: 22px;
+    }
+
+    .faq-btn-text {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .accordion-body {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 639px) {
+    .ag-courses_item {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .ag-courses-item_title {
+        min-height: 72px;
+        line-height: 1;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    .ag-courses-item_link {
+        padding: 22px 40px;
+    }
+
+    .ag-courses-item_date-box {
+        font-size: 16px;
+    }
+}
